@@ -332,6 +332,77 @@ input:focus-visible {
 }
 
 /* ==========================================================================
+   Motion system — scroll reveal, 3D tilt, float
+   ========================================================================== */
+
+/* Reveal: elements are fully visible by default. They are only hidden once
+   JS confirms motion is OK and adds .anim-ready to <html>, and JS guarantees
+   .is-visible is applied (observer + load + hard-timeout failsafes). */
+.anim-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.anim-ready [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* 3D tilt: JS feeds --rx/--ry from cursor position. Values default to 0 so
+   the element sits flat until hovered, and returns smoothly on mouseleave. */
+[data-tilt] {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+[data-tilt]:hover {
+  transition: transform 0.08s linear, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Lift child content slightly on the Z axis for real depth on hover. */
+[data-tilt] > * {
+  transform: translateZ(0.01px);
+}
+
+/* Magnetic elements ease back when the cursor leaves (JS clears transform). */
+[data-magnet] {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Gentle float loop, used on the TryCut spotlight logo. */
+@keyframes soft-float {
+  from {
+    transform: translateY(-6px);
+  }
+  to {
+    transform: translateY(6px);
+  }
+}
+
+.spotlight-logo {
+  animation: soft-float 4.5s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before,
+  .hero::after,
+  .hero-grid > *,
+  .spotlight-logo {
+    animation: none;
+  }
+  [data-tilt],
+  [data-magnet] {
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
    Navbar
    ========================================================================== */
 
@@ -484,6 +555,50 @@ input:focus-visible {
 .hero {
   padding-block: clamp(64px, 11vw, 128px) clamp(56px, 8vw, 96px);
   position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Ambient glow — slow-drifting soft gradient behind the headline. */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  left: -10%;
+  width: 70vw;
+  max-width: 820px;
+  aspect-ratio: 1;
+  background:
+    radial-gradient(closest-side, rgba(36, 81, 240, 0.16), rgba(36, 81, 240, 0) 70%);
+  filter: blur(8px);
+  animation: hero-drift 16s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -30%;
+  right: -8%;
+  width: 52vw;
+  max-width: 620px;
+  aspect-ratio: 1;
+  background:
+    radial-gradient(closest-side, rgba(201, 127, 20, 0.13), rgba(201, 127, 20, 0) 70%);
+  filter: blur(8px);
+  animation: hero-drift 20s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+}
+
+@keyframes hero-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(4%, 6%, 0) scale(1.12);
+  }
 }
 
 .hero-grid {
