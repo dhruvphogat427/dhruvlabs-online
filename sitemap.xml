@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Only indexable, content-complete pages are listed here.
+  /trycut/privacypolicy and /trycut/termsofservice are placeholders
+  (meta robots "noindex") until real legal copy is published — add them
+  here once that content ships and noindex is removed.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dhruvlabs.online/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

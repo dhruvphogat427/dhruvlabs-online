@@ -1,0 +1,27 @@
+# Netlify config for a plain static site (no build step).
+# If you deploy elsewhere (Vercel, Cloudflare Pages, GitHub Pages), this file
+# is simply ignored — see README.md for the equivalent config on those hosts.
+
+[build]
+  publish = "."
+
+# Canonical host is the apex domain (https://dhruvlabs.online) — see the
+# canonical URL in index.html. Redirect www to apex so there's one
+# canonical site, not two copies.
+[[redirects]]
+  from = "https://www.dhruvlabs.online/*"
+  to = "https://dhruvlabs.online/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
