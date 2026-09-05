@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Only indexable, content-complete pages are listed here.
-  /trycut/privacypolicy is still a placeholder (meta robots "noindex") —
-  add it here once its real content ships and noindex is removed.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dhruvlabs.online/</loc>
@@ -14,6 +9,11 @@
     <loc>https://dhruvlabs.online/trycut</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dhruvlabs.online/trycut/privacypolicy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://dhruvlabs.online/trycut/termsofservice</loc>

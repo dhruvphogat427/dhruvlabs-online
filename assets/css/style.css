@@ -1122,11 +1122,70 @@ input:focus-visible {
   margin-top: 14px;
 }
 
+.legal-list + p {
+  margin-top: 14px;
+}
+
 .legal-content a {
   color: var(--accent-ink);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+/* Labeled data items (dt = what we collect / who processes it) */
+.legal-defs {
+  margin: 4px 0 0;
+  display: grid;
+  gap: 16px;
+}
+
+.legal-defs > div {
+  padding-left: 16px;
+  border-left: 2px solid var(--line-strong);
+}
+
+.legal-defs dt {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 15.5px;
+  margin-bottom: 4px;
+}
+
+.legal-defs dd {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 64ch;
+}
+
+/* Bulleted list inside legal prose */
+.legal-list {
+  margin: 12px 0 0;
+  padding-left: 4px;
+  display: grid;
+  gap: 8px;
+}
+
+.legal-list li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--ink-2);
+  font-size: 15.5px;
+  line-height: 1.6;
+  max-width: 64ch;
+}
+
+.legal-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .legal-back {
