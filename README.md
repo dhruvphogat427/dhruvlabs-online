@@ -54,19 +54,12 @@ Canonical host is the apex domain, `https://dhruvlabs.online` — see
 config-based redirect (e.g. GitHub Pages), configure that redirect at the DNS/host
 level instead.
 
-## Known placeholders — replace before production
+## Optional follow-ups (not launch blockers)
 
-1. **Contact email** (`index.html`, Contact section): `hello@dhruvlabs.online` is a
-   placeholder. It is not a working mailbox yet. Either set that mailbox up with
-   your domain host, or tell me which address to use instead.
-2. **Legal content** (`/trycut/privacypolicy`, `/trycut/termsofservice`): both are
-   intentionally placeholder shells with `<meta name="robots" content="noindex">`.
-   Once real policy/terms text is supplied, drop it in, remove the `noindex` tag,
-   and add both URLs to `sitemap.xml`.
-3. **OG/social share image**: no image-generation tooling was available in this
+1. **OG/social share image**: no image-generation tooling was available in this
    environment, so there's no `og:image`. Text-only Open Graph/Twitter tags are in
    place; add a designed `og:image` (1200×630) later for richer link previews.
-4. **TryCut AI logo asset**: resized copies (`trycut-logo-512.png`,
+2. **TryCut AI logo asset**: resized copies (`trycut-logo-512.png`,
    `trycut-logo-192.png`) were generated from `TryCut LOGO.png` using Windows'
    built-in image APIs (no compression library was available). Re-export a
    properly compressed version if you have design tooling — the current 512px
