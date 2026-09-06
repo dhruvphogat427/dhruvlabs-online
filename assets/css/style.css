@@ -1317,6 +1317,73 @@ input:focus-visible {
   color: var(--ink);
 }
 
+/* Larger button variant — used for the single primary action on the
+   account-deletion page, where it needs to read as unmistakably "the" CTA. */
+.btn-lg {
+  padding: 16px 28px;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Account deletion — primary action card
+   ========================================================================== */
+
+.delete-action {
+  max-width: 720px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  padding: clamp(24px, 4vw, 40px);
+  margin-bottom: 40px;
+}
+
+.delete-action-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(19px, 2.4vw, 23px);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.delete-action-lede {
+  color: var(--ink-2);
+  font-size: 15.5px;
+  line-height: 1.65;
+  max-width: 62ch;
+  margin-bottom: 16px;
+}
+
+.delete-action-list {
+  margin-bottom: 24px;
+}
+
+.delete-action-btn {
+  width: fit-content;
+}
+
+.delete-action-note {
+  color: var(--ink-3);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 62ch;
+  margin-top: 16px;
+}
+
+.delete-action-note a {
+  color: var(--accent-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .delete-action-btn {
+    width: 100%;
+  }
+}
+
 /* ==========================================================================
    404
    ========================================================================== */
