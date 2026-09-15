@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108" role="img" aria-label="FaceMap">
+  <rect width="108" height="108" rx="22" fill="#08080A"/>
+  <path d="M54,26 C68,26 76,40 76,56 C76,74 66,86 54,86 C42,86 32,74 32,56 C32,40 40,26 54,26 Z" stroke="#D4AF37" stroke-width="3" fill="none"/>
+  <path d="M40,42 L54,52 L68,42 M40,42 L54,68 M68,42 L54,68 M54,52 L54,68 M44,64 L54,68 L64,64" stroke="#D4AF37" stroke-opacity="0.85" stroke-width="1.6" fill="none"/>
+  <circle cx="44" cy="46" r="2" fill="#D4AF37"/>
+  <circle cx="64" cy="46" r="2" fill="#D4AF37"/>
+</svg>

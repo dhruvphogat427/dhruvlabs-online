@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — FaceMap | DhruvLabs</title>
+  <meta name="description" content="Privacy Policy for FaceMap, a product by DhruvLabs." />
+  <link rel="canonical" href="https://dhruvlabs.online/facemap/privacypolicy" />
+
+  <meta name="theme-color" content="#f5f6f2" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="/" class="brand" aria-label="DhruvLabs — home">Dhruv<span>Labs</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#products">Products</a>
+        <a href="/#about">About</a>
+        <a href="/#principles">Principles</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="/#products" class="btn btn-primary btn-sm">Explore Products</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="legal-main">
+    <div class="wrap">
+      <a href="/facemap" class="legal-back">← Back to FaceMap</a>
+
+      <div class="legal-header">
+        <span class="eyebrow">FaceMap</span>
+        <h1>Privacy Policy</h1>
+        <p>How FaceMap, a product built by DhruvLabs, collects and handles your data.</p>
+        <p class="legal-updated">Last updated: 15 September 2026</p>
+      </div>
+
+      <div class="legal-content">
+        <section>
+          <h2><span class="num">1</span> Overview</h2>
+          <p>FaceMap is a face-shape and facial-proportion analysis app. It measures your face using an on-device 468-point face mesh, classifies your face shape, computes a geometry-based "Face Score," and recommends hairstyles, beards, and glasses that suit your proportions.</p>
+          <p>This policy explains exactly what data the app touches, what it does with it, and what it deliberately never does — it's written to match the app's actual behavior, not a generic template.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">2</span> What FaceMap processes</h2>
+          <dl class="legal-defs">
+            <div>
+              <dt>Camera photo / picked photo</dt>
+              <dd>Used to detect your 468-point face mesh and compute measurements. Never leaves your device.</dd>
+            </div>
+            <div>
+              <dt>Face measurements &amp; score</dt>
+              <dd>Used to classify your face shape and compute a symmetry/balance score and style recommendations. Never leaves your device.</dd>
+            </div>
+            <div>
+              <dt>A small cropped thumbnail</dt>
+              <dd>Shown in your scan History list. Never leaves your device.</dd>
+            </div>
+            <div>
+              <dt>Onboarding answers (age range, styling goals)</dt>
+              <dd>Used to personalize which styles are shown first. Never leaves your device.</dd>
+            </div>
+            <div>
+              <dt>Re-scan reminder preference</dt>
+              <dd>Used to schedule an optional local notification. Never leaves your device.</dd>
+            </div>
+          </dl>
+          <p>All five are computed and stored <b>on your device only</b>, using Android's local Room database and DataStore preferences. FaceMap has no server, no user database, and no way to see any of this even if it wanted to.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">3</span> What we don't collect</h2>
+          <ul class="legal-list">
+            <li>No name, email, or phone number — there is no account or sign-in system in FaceMap.</li>
+            <li>No advertising identifiers, and no ad SDKs are built into the app.</li>
+            <li>No third-party analytics or crash-reporting SDK ships in FaceMap, so no usage events are collected off-device.</li>
+            <li>No contacts, location, microphone, or broad photo-library access — FaceMap uses Android's system Photo Picker, which shares only the one image you explicitly select.</li>
+            <li>No biometric identity data. Face mesh measurements describe geometry (proportions and distances), not an identity template, and are never used to identify or verify who you are.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">4</span> Where your data lives</h2>
+          <p>Everything FaceMap stores — scan history, thumbnails, measurements, and preferences — lives in a local database and local preferences file on your device. The app explicitly disables Android's automatic cloud backup and device-transfer for this data, so a scan's data doesn't silently follow you to a new phone or a cloud restore — uninstalling FaceMap removes it completely.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">5</span> Permissions we ask for</h2>
+          <dl class="legal-defs">
+            <div>
+              <dt>Camera</dt>
+              <dd>To capture a photo for analysis. Only used while you're actively scanning.</dd>
+            </div>
+            <div>
+              <dt>Notifications</dt>
+              <dd>Only requested if you opt in to re-scan reminders — never asked for otherwise.</dd>
+            </div>
+          </dl>
+          <p>FaceMap does not request storage, contacts, location, or microphone permissions. One more permission appears in the installed app's permission list even though no FaceMap code asks for it: internet access. It's added automatically by Google's on-device ML library for that SDK's own diagnostics — no code FaceMap has written uses it, and no photo, measurement, or face data is ever sent through it. See Third parties below.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">6</span> Purchases &amp; billing data</h2>
+          <p>FaceMap offers an optional Premium unlock (₹149/week or a ₹499 one-time Lifetime option) via Google Play's Billing system, managed through RevenueCat. When you purchase, <b>Google Play processes the transaction</b> — FaceMap never sees or stores your card number, UPI ID, or any other payment credential. RevenueCat receives your purchase token and an anonymous device identifier so the app can check what you own; it never receives your photos, face measurements, or any other analysis data. Google's and RevenueCat's handling of this information is governed by their own privacy policies.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">7</span> Third parties</h2>
+          <dl class="legal-defs">
+            <div>
+              <dt>Google ML Kit</dt>
+              <dd>Finds facial landmarks. The detection model is bundled inside the app itself at install time — it is not downloaded from Google at runtime — and runs entirely on-device. Your photo is processed locally by this library and is not uploaded to Google or any other server as part of that analysis.</dd>
+            </div>
+            <div>
+              <dt>Google Play Billing</dt>
+              <dd>Processes purchases of the optional Premium unlock. See "Purchases &amp; billing data" above.</dd>
+            </div>
+            <div>
+              <dt>RevenueCat</dt>
+              <dd>Manages Premium entitlement state. Receives a purchase token and an anonymous device identifier only — never your photos or analysis data.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section>
+          <h2><span class="num">8</span> Your controls</h2>
+          <ul class="legal-list">
+            <li><b>Delete a single scan:</b> swipe or tap delete on any entry in History.</li>
+            <li><b>Delete everything:</b> Settings → Data &amp; Privacy → Delete all my data — permanently removes every saved scan and photo immediately.</li>
+            <li><b>Turn off reminders:</b> Settings → Re-scan reminders, or revoke notification permission in Android's system settings.</li>
+            <li><b>Uninstall:</b> since nothing is backed up off-device, uninstalling the app removes all of the above along with it.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">9</span> Children's privacy</h2>
+          <p>FaceMap is not directed at children under 13, and we do not knowingly collect information from children. Because the app performs no server-side data collection at all, there is no server-side children's data to hold in the first place.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span> Changes to this policy</h2>
+          <p>We will update this page when what FaceMap collects or how it's used changes, and note the date of the most recent revision above.</p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span> Contact</h2>
+          <p>Questions about this policy or FaceMap's data practices can be sent to <a href="mailto:support.trycut@gmail.com">support.trycut@gmail.com</a>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand" aria-label="DhruvLabs — home">Dhruv<span>Labs</span></a>
+          <p>Building useful products for the AI era.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="/#products">Products</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/trycut/privacypolicy">TryCut Privacy Policy</a></li>
+            <li><a href="/trycut/termsofservice">TryCut Terms of Service</a></li>
+            <li><a href="/trycut/deleteaccount">TryCut Delete Account</a></li>
+            <li><a href="/facemap/privacypolicy">FaceMap Privacy Policy</a></li>
+            <li><a href="/facemap/termsofservice">FaceMap Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 DhruvLabs. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

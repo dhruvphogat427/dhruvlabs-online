@@ -18,12 +18,17 @@ npm dependencies, nothing to build. Chosen because:
 
 ```
 index.html                          Homepage
-trycut/privacypolicy/index.html     Placeholder — TryCut AI Privacy Policy
-trycut/termsofservice/index.html    Placeholder — TryCut AI Terms of Service
+trycut/index.html                   TryCut AI product page
+trycut/privacypolicy/index.html     TryCut AI Privacy Policy
+trycut/termsofservice/index.html    TryCut AI Terms of Service
+trycut/deleteaccount/index.html     TryCut AI account-deletion request page
+facemap/index.html                  FaceMap product page
+facemap/privacypolicy/index.html    FaceMap Privacy Policy
+facemap/termsofservice/index.html   FaceMap Terms of Service
 404.html                            Not-found page (used by most static hosts automatically)
 assets/css/style.css                Full design system + component styles
 assets/js/main.js                   Progressive enhancement only
-assets/images/                      TryCut AI logo (resized), favicon
+assets/images/                      TryCut AI logo (resized), FaceMap logo (SVG), favicon
 robots.txt, sitemap.xml, site.webmanifest
 netlify.toml                        Netlify-specific redirect/header config
 ```
