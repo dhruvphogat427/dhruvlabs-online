@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Mileback app icon, default (light) appearance. Full-bleed square: iOS applies the rounded mask. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9F2EC"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="512" cy="512" r="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22C977" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#22C977" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="330" y1="150" x2="700" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2BD47F"/>
+      <stop offset="0.5" stop-color="#10A95E"/>
+      <stop offset="1" stop-color="#067A43"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <path id="s" d="M690 330 C640 285 575 268 510 268 C400 268 330 310 330 382 C330 455 400 480 512 510 C624 540 694 570 694 640 C694 712 620 752 512 752 C440 752 380 735 336 700"/>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#halo)"/>
+
+  <g filter="url(#shadow)" opacity="0.3" transform="translate(0 18)" fill="none" stroke="#067A43" stroke-width="104" stroke-linecap="round">
+    <path d="M512 178 V230"/>
+    <path d="M512 790 V846"/>
+    <use href="#s"/>
+  </g>
+
+  <g fill="none" stroke="url(#road)" stroke-width="104" stroke-linecap="round">
+    <path d="M512 178 V230"/>
+    <path d="M512 790 V846"/>
+    <use href="#s"/>
+  </g>
+
+  <use href="#s" fill="none" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="16" stroke-linecap="round" stroke-dasharray="46 42" stroke-dashoffset="-30"/>
+
+  <path d="M752 384.5 C734.5 359.5 702 329.5 702 282 A50 50 0 1 1 802 282 C802 329.5 769.5 359.5 752 384.5 Z" fill="#0F1F17" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round" paint-order="stroke"/>
+  <circle cx="752" cy="282" r="20" fill="#FFFFFF"/>
+</svg>
