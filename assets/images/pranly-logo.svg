@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Pranly app icon (breathing orb). Full-bleed square: stores apply the rounded mask. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4FBFA"/>
+      <stop offset="1" stop-color="#DCEFEE"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="430" cy="410" r="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FE3D6"/>
+      <stop offset="0.55" stop-color="#2FB9A8"/>
+      <stop offset="1" stop-color="#127C74"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <circle cx="512" cy="512" r="400" fill="none" stroke="#2FB9A8" stroke-opacity="0.16" stroke-width="10"/>
+  <circle cx="512" cy="512" r="330" fill="none" stroke="#2FB9A8" stroke-opacity="0.28" stroke-width="10"/>
+
+  <circle cx="512" cy="548" r="230" fill="#127C74" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="512" cy="512" r="250" fill="url(#orb)"/>
+  <ellipse cx="440" cy="420" rx="92" ry="60" fill="#FFFFFF" opacity="0.28" transform="rotate(-28 440 420)"/>
+</svg>
