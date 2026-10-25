@@ -43,7 +43,7 @@
         <span class="eyebrow">FaceMap</span>
         <h1>Privacy Policy</h1>
         <p>How FaceMap, developed under the DSLR Labs brand, collects and handles your data.</p>
-        <p class="legal-updated">Last updated: 15 September 2026</p>
+        <p class="legal-updated">Last updated: 25 October 2026</p>
       </div>
 
       <div class="legal-content">
@@ -51,7 +51,7 @@
           <h2><span class="num">1</span> Overview</h2>
           <p>FaceMap is developed and operated by Lilu Ram, doing business as DSLR Labs (&ldquo;DSLR Labs&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;).</p>
           <p>FaceMap is a face-shape and facial-proportion analysis app. It measures your face using an on-device 468-point face mesh, classifies your face shape, computes a geometry-based "Face Score," and recommends hairstyles, beards, and glasses that suit your proportions.</p>
-          <p>This policy explains exactly what data the app touches, what it does with it, and what it deliberately never does — it's written to match the app's actual behavior, not a generic template.</p>
+          <p>This policy explains exactly what data the app touches, what it does with it, and what it deliberately never does (your photo and face data never leave your device) — it's written to match the app's actual behavior, not a generic template.</p>
         </section>
 
         <section>
@@ -86,7 +86,7 @@
           <ul class="legal-list">
             <li>No name, email, or phone number — there is no account or sign-in system in FaceMap.</li>
             <li>No advertising identifiers, and no ad SDKs are built into the app.</li>
-            <li>No third-party analytics or crash-reporting SDK ships in FaceMap, so no usage events are collected off-device.</li>
+            <li>No photos, face measurements, scores, results, or anything you type are ever included in the anonymous usage counts described in section 7. FaceMap uses no crash-reporting SDK.</li>
             <li>No contacts, location, microphone, or broad photo-library access — FaceMap uses Android's system Photo Picker, which shares only the one image you explicitly select.</li>
             <li>No biometric identity data. Face mesh measurements describe geometry (proportions and distances), not an identity template, and are never used to identify or verify who you are.</li>
           </ul>
@@ -109,7 +109,7 @@
               <dd>Only requested if you opt in to re-scan reminders — never asked for otherwise.</dd>
             </div>
           </dl>
-          <p>FaceMap does not request storage, contacts, location, or microphone permissions. One more permission appears in the installed app's permission list even though no FaceMap code asks for it: internet access. It's added automatically by Google's on-device ML library for that SDK's own diagnostics — no code FaceMap has written uses it, and no photo, measurement, or face data is ever sent through it. See Third parties below.</p>
+          <p>FaceMap does not request storage, contacts, location, or microphone permissions. FaceMap also has internet access, which is used only for purchases (Google Play and RevenueCat), anonymous usage counts (Firebase Analytics), and diagnostics from Google's on-device ML library. No photo, measurement, or face data is ever sent through it. See Third parties below.</p>
         </section>
 
         <section>
@@ -132,7 +132,20 @@
               <dt>RevenueCat</dt>
               <dd>Manages Premium entitlement state. Receives a purchase token and an anonymous device identifier only — never your photos or analysis data.</dd>
             </div>
+            <div>
+              <dt>Firebase Analytics (Google)</dt>
+              <dd>Counts how the app is used so we can improve it. See "Anonymous usage counts" below.</dd>
+            </div>
           </dl>
+
+          <h3>Anonymous usage counts</h3>
+          <p>FaceMap uses Firebase Analytics, a Google service, to count which screens and buttons are used. Examples: opened the camera, started or finished a scan, viewed the paywall, started a purchase, opened a style, shared a result.</p>
+          <ul class="legal-list">
+            <li><b>What is collected:</b> these app-activity events, with fixed labels and rounded numbers (for example how many seconds a scan took, or which step of onboarding you reached), plus the app-instance ID that Firebase generates on your device, your app version, Android version, device model, approximate country, and language.</li>
+            <li><b>What is never collected:</b> your photo, face mesh, measurements, face shape, Face Score, results, anything you type, your name, email, or phone number, or your advertising ID. FaceMap does not use Firebase for advertising and does not share this data for ads.</li>
+            <li><b>Your choice:</b> turn it off any time in Settings → "Share anonymous usage". In the European Economic Area, the United Kingdom, and Switzerland it starts off and only begins if you turn it on. Turning it off stops new events from being sent.</li>
+            <li><b>Retention:</b> event data is kept in Firebase for up to 14 months and then deleted automatically. Data is processed by Google under its own privacy policy and may be handled on servers outside your country.</li>
+          </ul>
         </section>
 
         <section>
@@ -140,6 +153,7 @@
           <ul class="legal-list">
             <li><b>Delete a single scan:</b> swipe or tap delete on any entry in History.</li>
             <li><b>Delete everything:</b> Settings → Data &amp; Privacy → Delete all my data — permanently removes every saved scan and photo immediately.</li>
+            <li><b>Turn off usage counts:</b> Settings → Share anonymous usage.</li>
             <li><b>Turn off reminders:</b> Settings → Re-scan reminders, or revoke notification permission in Android's system settings.</li>
             <li><b>Uninstall:</b> since nothing is backed up off-device, uninstalling the app removes all of the above along with it.</li>
           </ul>
@@ -147,7 +161,7 @@
 
         <section>
           <h2><span class="num">9</span> Children's privacy</h2>
-          <p>FaceMap is not directed at children under 13, and we do not knowingly collect information from children. Because the app performs no server-side data collection at all, there is no server-side children's data to hold in the first place.</p>
+          <p>FaceMap is not directed at children under 13, and we do not knowingly collect information from children. The only data that leaves the device is the anonymous usage counts described above and purchase information handled by Google Play and RevenueCat, and none of it identifies a person by name or contains photos.</p>
         </section>
 
         <section>
