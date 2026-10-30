@@ -25,6 +25,10 @@ trycut/deleteaccount/index.html     TryCut AI account-deletion request page
 facemap/index.html                  FaceMap product page
 facemap/privacypolicy/index.html    FaceMap Privacy Policy
 facemap/termsofservice/index.html   FaceMap Terms of Service
+amoro/index.html                    Amoro product page
+amoro/privacypolicy/index.html      Amoro Privacy Policy
+amoro/termsofservice/index.html     Amoro Terms of Service
+amoro/deleteaccount/index.html      Amoro account-deletion request page
 404.html                            Not-found page (used by most static hosts automatically)
 assets/css/style.css                Full design system + component styles
 assets/js/main.js                   Progressive enhancement only

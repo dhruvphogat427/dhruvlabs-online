@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Amoro">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A1630"/><stop offset="1" stop-color="#1A0F1F"/></linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF8FB0"/><stop offset="1" stop-color="#FF5C8A"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path fill="url(#heart)" d="M256 392 C150 318 112 262 112 210 C112 168 144 138 184 138 C216 138 241 156 256 184 C271 156 296 138 328 138 C368 138 400 168 400 210 C400 262 362 318 256 392 Z"/>
+</svg>
