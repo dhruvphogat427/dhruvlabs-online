@@ -43,7 +43,7 @@
         <span class="eyebrow">FaceMap</span>
         <h1>Privacy Policy</h1>
         <p>How FaceMap, developed under the DSLR Labs brand, collects and handles your data.</p>
-        <p class="legal-updated">Last updated: 25 October 2026</p>
+        <p class="legal-updated">Last updated: 12 November 2026</p>
       </div>
 
       <div class="legal-content">
@@ -109,12 +109,12 @@
               <dd>Only requested if you opt in to re-scan reminders — never asked for otherwise.</dd>
             </div>
           </dl>
-          <p>FaceMap does not request storage, contacts, location, or microphone permissions. FaceMap also has internet access, which is used only for purchases (Google Play and RevenueCat), anonymous usage counts (Firebase Analytics), and diagnostics from Google's on-device ML library. No photo, measurement, or face data is ever sent through it. See Third parties below.</p>
+          <p>FaceMap does not request storage, contacts, location, or microphone permissions. FaceMap also has internet access, which is used only for purchases (Google Play and RevenueCat), anonymous usage counts (Firebase Analytics and Mixpanel), and diagnostics from Google's on-device ML library. No photo, measurement, or face data is ever sent through it. See Third parties below.</p>
         </section>
 
         <section>
           <h2><span class="num">6</span> Purchases &amp; billing data</h2>
-          <p>FaceMap offers an optional Premium unlock (₹149/week or a ₹499 one-time Lifetime option) via Google Play's Billing system, managed through RevenueCat. When you purchase, <b>Google Play processes the transaction</b> — FaceMap never sees or stores your card number, UPI ID, or any other payment credential. RevenueCat receives your purchase token and an anonymous device identifier so the app can check what you own; it never receives your photos, face measurements, or any other analysis data. Google's and RevenueCat's handling of this information is governed by their own privacy policies.</p>
+          <p>FaceMap offers an optional Premium unlock (a weekly subscription or a one-time Lifetime purchase; prices depend on your country and are shown in the app and on Google Play before you pay) via Google Play's Billing system, managed through RevenueCat. When you purchase, <b>Google Play processes the transaction</b> — FaceMap never sees or stores your card number, UPI ID, or any other payment credential. RevenueCat receives your purchase token and an anonymous device identifier so the app can check what you own; it never receives your photos, face measurements, or any other analysis data. Google's and RevenueCat's handling of this information is governed by their own privacy policies.</p>
         </section>
 
         <section>
@@ -136,15 +136,19 @@
               <dt>Firebase Analytics (Google)</dt>
               <dd>Counts how the app is used so we can improve it. See "Anonymous usage counts" below.</dd>
             </div>
+            <div>
+              <dt>Mixpanel</dt>
+              <dd>Receives the same anonymous usage counts as Firebase Analytics, so we can see where people get stuck in the app. See "Anonymous usage counts" below.</dd>
+            </div>
           </dl>
 
           <h3>Anonymous usage counts</h3>
-          <p>FaceMap uses Firebase Analytics, a Google service, to count which screens and buttons are used. Examples: opened the camera, started or finished a scan, viewed the paywall, started a purchase, opened a style, shared a result.</p>
+          <p>FaceMap uses Firebase Analytics (a Google service) and Mixpanel (Mixpanel, Inc., data stored in the United States) to count which screens and buttons are used. Both receive exactly the same events. Examples: opened the camera, started or finished a scan, viewed the paywall, started a purchase, opened a style, shared a result.</p>
           <ul class="legal-list">
-            <li><b>What is collected:</b> these app-activity events, with fixed labels and rounded numbers (for example how many seconds a scan took, or which step of onboarding you reached), plus the app-instance ID that Firebase generates on your device, your app version, Android version, device model, approximate country, and language.</li>
-            <li><b>What is never collected:</b> your photo, face mesh, measurements, face shape, Face Score, results, anything you type, your name, email, or phone number, or your advertising ID. FaceMap does not use Firebase for advertising and does not share this data for ads.</li>
-            <li><b>Your choice:</b> turn it off any time in Settings → "Share anonymous usage". In the European Economic Area, the United Kingdom, and Switzerland it starts off and only begins if you turn it on. Turning it off stops new events from being sent.</li>
-            <li><b>Retention:</b> event data is kept in Firebase for up to 14 months and then deleted automatically. Data is processed by Google under its own privacy policy and may be handled on servers outside your country.</li>
+            <li><b>What is collected:</b> these app-activity events, with fixed labels and rounded numbers (for example how many seconds a scan took, which step of onboarding you reached, or which preset choice you tapped on an onboarding question), plus a random app-instance ID that Firebase and Mixpanel each generate on your device, your app version, Android version, device model, approximate country, and language.</li>
+            <li><b>What is never collected:</b> your photo, face mesh, measurements, face shape, Face Score, results, anything you type, your name, email, or phone number, or your advertising ID. FaceMap does not use Firebase or Mixpanel for advertising, does not sell this data, and does not share it for ads. There are no accounts, so these events are never linked to your name.</li>
+            <li><b>Your choice:</b> turn it off any time in Settings → "Share anonymous usage". In the European Economic Area, the United Kingdom, and Switzerland it starts off and only begins if you turn it on. The same switch controls both Firebase Analytics and Mixpanel. Turning it off stops new events from being sent and clears any Mixpanel events still waiting on your device.</li>
+            <li><b>Retention:</b> event data is kept in Firebase for up to 14 months and then deleted automatically. Mixpanel keeps event data while FaceMap's analytics project is active, and it is deleted when that project is closed. Google and Mixpanel process this data as our service providers under their own privacy policies, and it may be handled on servers outside your country.</li>
           </ul>
         </section>
 
