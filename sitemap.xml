@@ -75,24 +75,5 @@
     <loc>https://dhruvlabs.online/pranly/termsofservice</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-  </url>  <url>
-    <loc>https://dhruvlabs.online/amoro</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dhruvlabs.online/amoro/privacypolicy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://dhruvlabs.online/amoro/termsofservice</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://dhruvlabs.online/amoro/deleteaccount</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
