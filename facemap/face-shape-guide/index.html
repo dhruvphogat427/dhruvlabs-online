@@ -96,6 +96,10 @@
     .faq details { border-bottom: 1px solid var(--line); padding: 14px 0; }
     .faq summary { cursor: pointer; font-weight: 600; color: var(--ink); font-size: 16.5px; }
     .faq details p { margin: 10px 0 0; }
+    .related { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 14px 0 0; }
+    .related a { display: grid; gap: 4px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); text-decoration: none; color: var(--ink); font-weight: 600; }
+    .related a:hover, .related a:focus-visible { border-color: var(--accent); }
+    .related small { color: var(--ink-3); font-weight: 500; font-size: 13.5px; line-height: 1.45; }
   </style>
 </head>
 <body>
@@ -161,7 +165,7 @@
         <p>Many faces fall between two shapes. If you are close to two, read both sections below. A tape measure is fine for a rough answer, but small differences matter, which is why an app that measures hundreds of points is more reliable than eyeballing a photo.</p>
 
         <h2 id="what-suits">The best haircut, beard and glasses for each face shape</h2>
-        <p>The idea is always the same: add what your shape lacks and avoid stretching what it already has. A long face needs width, a round face needs height and angles, a strong jaw needs softness.</p>
+        <p>The idea is always the same: add what your shape lacks and avoid stretching what it already has. A long face needs width, a round face needs height and angles, a strong jaw needs softness. For more detail, see the full guides to <a href="/facemap/haircuts-for-face-shape">haircuts</a>, <a href="/facemap/beard-styles-for-face-shape">beard styles</a> and <a href="/facemap/glasses-for-face-shape">glasses</a> for each face shape.</p>
 
         <section class="shape" id="oval">
           <div class="shape-head"><svg viewBox="0 0 64 80" aria-hidden="true"><ellipse class="face" cx="32" cy="40" rx="22" ry="32"/></svg><div><h3>Oval face</h3><p>Balanced proportions, longer than wide, rounded jaw.</p></div></div>
@@ -245,6 +249,13 @@
           <details><summary>Is there an app that tells you your face shape?</summary><p>FaceMap measures 468 points on your face from one selfie, on your phone, and tells you your face shape with the haircuts, beards and glasses that suit it. Your photo is never uploaded.</p></details>
         </div>
 
+        <h2 id="more">Go deeper: style guides by face shape</h2>
+        <div class="related">
+          <a href="/facemap/haircuts-for-face-shape">Haircuts for your face shape<small>Men's and women's cuts for each shape, and what to ask your barber.</small></a>
+          <a href="/facemap/beard-styles-for-face-shape">Beard styles for your face shape<small>Where to keep length and where to trim, shape by shape.</small></a>
+          <a href="/facemap/glasses-for-face-shape">Glasses for your face shape<small>Frame shapes that suit each face, and how to check the size.</small></a>
+        </div>
+
         <p style="margin-top:32px;font-size:14px;color:var(--ink-3);">Style advice is general guidance. Your own taste always comes first.</p>
       </article>
     </div>
@@ -262,6 +273,9 @@
           <ul>
             <li><a href="/facemap">About FaceMap</a></li>
             <li><a href="/facemap/face-shape-guide">Face shape guide</a></li>
+            <li><a href="/facemap/haircuts-for-face-shape">Haircuts for your face shape</a></li>
+            <li><a href="/facemap/beard-styles-for-face-shape">Beard styles for your face shape</a></li>
+            <li><a href="/facemap/glasses-for-face-shape">Glasses for your face shape</a></li>
             <li><a href="/facemap/privacypolicy">Privacy Policy</a></li>
             <li><a href="/facemap/termsofservice">Terms of Service</a></li>
           </ul>
